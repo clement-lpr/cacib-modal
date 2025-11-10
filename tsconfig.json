@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
+    "declaration": false,
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "baseUrl": "./src",
+    "strict": true,
+    "experimentalDecorators": true,
+    "lib": ["dom", "es2022"],
+    "paths": {
+      "@assets/*": ["assets/*"]
+    },
+    "moduleResolution": "bundler",
+    "module": "esnext",
+    "target": "es2022",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "jsx": "react",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "h.Fragment"
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
