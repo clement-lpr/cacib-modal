@@ -1,0 +1,95 @@
+@import 'tailwindcss' prefix(tw);
+@plugin "@tailwindcss/forms";
+
+/* === THEME TOKENS GENERATED FROM theme.ts === */
+@theme {
+  /* === GRAY SCALE === */
+  --color-gray-50: #f8f9fa;
+  --color-gray-100: #f1f3f5;
+  --color-gray-200: #e9ecef;
+  --color-gray-300: #dee2e6;
+  --color-gray-400: #ced4da;
+  --color-gray-500: #adb5bd;
+  --color-gray-600: #868e96;
+  --color-gray-700: #495057;
+  --color-gray-800: #343a40;
+  --color-gray-900: #212529;
+
+  /* === TEAL (Primary) === */
+  --color-teal-50: #e6fcf5;
+  --color-teal-100: #c3fae8;
+  --color-teal-200: #96f2d7;
+  --color-teal-300: #63e6be;
+  --color-teal-400: #38d9a9;
+  --color-teal-500: #20c997;
+  --color-teal-600: #12b886;
+  --color-teal-700: #0ca678;
+  --color-teal-800: #099268;
+  --color-teal-900: #087f5b;
+
+  /* === BLUE (Secondary) === */
+  --color-blue-50: #e7f5ff;
+  --color-blue-100: #d0ebff;
+  --color-blue-200: #a5d8ff;
+  --color-blue-300: #74c0fc;
+  --color-blue-400: #4dabf7;
+  --color-blue-500: #339af0;
+  --color-blue-600: #228be6;
+  --color-blue-700: #1c7ed6;
+  --color-blue-800: #1971c2;
+  --color-blue-900: #1864ab;
+
+  /* === RED === */
+  --color-red-50: #fff5f5;
+  --color-red-100: #fed7d7;
+  --color-red-200: #feb2b2;
+  --color-red-300: #fc8181;
+  --color-red-400: #f56565;
+  --color-red-500: #e53e3e;
+  --color-red-600: #c53030;
+  --color-red-700: #9b2c2c;
+  --color-red-800: #822727;
+  --color-red-900: #63171b;
+
+  /* === GREEN === */
+  --color-green-50: #f0fff4;
+  --color-green-100: #c6f6d5;
+  --color-green-200: #9ae6b4;
+  --color-green-300: #68d391;
+  --color-green-400: #48bb78;
+  --color-green-500: #38a169;
+  --color-green-600: #2f855a;
+  --color-green-700: #276749;
+  --color-green-800: #22543d;
+  --color-green-900: #1c4532;
+
+  /* === YELLOW === */
+  --color-yellow-50: #fffff0;
+  --color-yellow-100: #fefcbf;
+  --color-yellow-200: #faf089;
+  --color-yellow-300: #f6e05e;
+  --color-yellow-400: #ecc94b;
+  --color-yellow-500: #d69e2e;
+  --color-yellow-600: #b7791f;
+  --color-yellow-700: #975a16;
+  --color-yellow-800: #744210;
+  --color-yellow-900: #5f370e;
+
+  /* === SEMANTIC COLORS === */
+  --color-primary: var(--color-teal-600);
+  --color-secondary: var(--color-blue-600);
+  --color-success: var(--color-green-600);
+  --color-warning: var(--color-yellow-500);
+  --color-error: var(--color-red-500);
+
+  --color-background: var(--color-gray-50);
+  --color-surface: #ffffff;
+
+  --color-text-primary: var(--color-gray-900);
+  --color-text-secondary: var(--color-gray-700);
+  --color-text-muted: var(--color-gray-500);
+
+  --color-border-light: var(--color-gray-200);
+  --color-border-default: var(--color-gray-300);
+  --color-border-dark: var(--color-gray-400);
+}

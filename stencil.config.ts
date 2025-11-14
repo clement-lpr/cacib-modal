@@ -1,8 +1,19 @@
 import { Config } from '@stencil/core';
+import { sass } from '@stencil/sass';
+import tailwind, { setPluginConfigurationDefaults, tailwindGlobal, tailwindHMR } from 'stencil-tailwind-plugin';
+
+setPluginConfigurationDefaults({
+  enableDebug: false,
+  tailwindCssPath: './src/styles/tailwind.css',
+});
 
 export const config: Config = {
   namespace: 'cacib',
   tsconfig: 'tsconfig.json',
+  plugins: [sass(), tailwindGlobal(), tailwind(), tailwindHMR()],
+  devServer: {
+    reloadStrategy: 'pageReload',
+  },
   outputTargets: [
     {
       type: 'dist',
@@ -18,7 +29,11 @@ export const config: Config = {
     },
     {
       type: 'www',
-      serviceWorker: null, // disable service workers
+      serviceWorker: null,
+    },
+    {
+      type: 'docs-json',
+      file: './custom-elements.json',
     },
   ],
   testing: {
